@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-SHOP</title>
+    <link rel="stylesheet"
+        href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+</style>
+
+<body>
+    <div class="container">
+        <!-- menu -->
+        <div class="banner" id="menu_move">
+            HÓA ĐƠN TRÊN 1500K ĐƯỢC TẶNG 1 EMOJI CAP
+        </div>
+        <div class="menu">
+            <div id="logo">
+                <a href="index.html" style="text-decoration: none;color: black;">
+                    <h1 style="font-family: 'Dancing Script';">BTAStore</h1>
+                <h4 style="color: rgb(165, 161, 161);">online store</h4>
+                </a>
+            </div>
+
+            <div class="nav_link">
+                <ul class="nav_content">
+                    <li class="nav_item"><a href="#" class="active">Trang
+                            Chủ</a>
+                    </li>
+                    <li class="nav_item"><a href="#">Shop</a>
+                        <!-- menu con -->
+                        <ul class="menu_child">
+                            <li class="menu_child_item">Tất Cả Sản Phẩm</li>
+                            <li class="menu_child_item">Áo Thun</li>
+                            <li class="menu_child_item">Ba Lô</li>
+                            <li class="menu_child_item">Áo Khoác</li>
+                        </ul>
+                        <!--end menu con-->
+                    </li>
+                    <li class="nav_item"><a href="#">Giới Thiệu</a></li>
+                    <li class="nav_item"><a href="#">Blog</a></li>
+                    <li class="nav_item"><a href="#">Liên Hệ</a></li>
+                    <li class="nav_item">
+                        <a href="sign_up.html">Register</a> |
+                        <a href="login_page.html">Sign In</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- <div class="login_register">
+                <a href="#">Register</a>
+                <a href="#">Sign In</a>
+            </div> -->
+
+            <div class="search_cart">
+                <button><i class="fa fa-search"></i></button>
+                <button><i class="fa fa-shopping-cart"></i></button>
+                <button class="btnNav"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+
+
+        <div class="login_box">
+           <h1 style="color: crimson;">Đăng Ký</h1>
+            <div class="login_item">
+                <form action="">
+                    <input type="text" name="fullname" placeholder="Họ Tên">
+                    <br>
+                    <br>
+                    <input type="radio" name="sex" class="sex">Nam
+                    <input type="radio" name="sex" class="sex">Nữ
+                    <br>
+                    <br>
+                    <input type="date" name="birthday" >
+                    <br>
+                    <br>
+                    <input type="text" name="username" placeholder="Email">
+                    <br>
+                    <br>
+                    <input type="password" name="password" placeholder="Password">
+                    <br>
+                    <br>
+                    <button class="btn_login">Đăng Ký</button>
+                    <span><a href="login_page.html">Đăng Nhập</a></span>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="card_footer" style="color: gainsboro;font-size: 15px;">
+                <h3>Location:</h3>
+                <br>
+                <p><i class="fas fa-map-marker-alt"></i> 51 Khu 1A Thị Trấn Cần
+                    Đước</p>
+                <br>
+                <p><i class="fas fa-phone"></i> 0765829485</p>
+                <br>
+                <p> <i class="fas fa-envelope"></i> tuananhvip1099@gmail.com</p>
+                <br>
+                <p>Zalo:0899784190</p>
+                <br>
+                <p>Facebook:tuananhvip1099/fb</p>
+            </div>
+
+            <div class="card_footer box_email">
+                <h4>Hãy Nhập Email để nhận thông tin mới nhất về sản phẩm</h4>
+                <br>
+                <div class="btn_email">
+                    <input type="text" placeholder="Nhập Email">
+                    <button><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+
+            <div class="card_footer" style="color: white;">
+                <h3>Follow Us on Social</h3>
+                <button><i class="fab fa-facebook"></i></button>
+                <button><i class="fab fa-instagram"></i></button>
+                <button><i class="fab fa-twitter-square"></i></button>
+            </div>
+
+            <div class="card_footer" style="color: white;">
+                <h3>Giao hàng nhanh trong ngày</h3>
+                <p>Có thể trì hoãn trong mùa dịch</p>
+                <img src="https://product.hstatic.net/1000405368/product/giao_hang_nhanh_toan_quoc_color.b7d18fe5_39425b03ee544ab2966d465756a00f89.png"
+                    alt="">
+            </div>
+        </div>
+
+        <a class="btn_move_top" href="#menu_move"> <i
+                class="fa fa-chevron-up"></i> </a>
+        <script>
+
+            let nav = document.querySelector('.menu');
+            let btnMoveTop = document.querySelector('.btn_move_top');
+            let btnNav = document.querySelector('.btnNav');
+            let menu_nav = document.querySelector('.nav_link');
+            console.log(nav);
+
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 70) {
+                    nav.classList.add('active_nav_fixed');
+                }
+                else if (window.pageYOffset < 70) {
+                    nav.classList.remove('active_nav_fixed');
+                }
+            })
+
+
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 500) {
+                    btnMoveTop.style.opacity = '1';
+                    btnMoveTop.style.visibility = 'visible';
+                }
+                else if (window.pageYOffset < 500) {
+                    btnMoveTop.style.opacity = '0';
+                    btnMoveTop.style.visibility = 'hidden';
+                }
+            })
+
+            let count_click = 0;
+            btnNav.onclick = () => {
+                if (count_click == 0) {
+                    menu_nav.classList.add('btn_active_nav');
+                    count_click = 1;
+                }
+                else {
+                    menu_nav.classList.remove('btn_active_nav');
+                    count_click = 0;
+                }
+            }
+
+        </script>
+    </div>
+</body>
+
+</html>

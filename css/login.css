@@ -1,0 +1,55 @@
+.login_box{
+    width: 100%;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0;
+}
+.login_box h1{
+    padding: 40px 0 15px 0;
+    position: relative;
+}
+.login_box h1::after{
+content: "";
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+width: 100px;
+height: 5px;
+background-color: black;
+}
+
+.login_item{
+    padding:30px 0;
+}
+
+.login_item form input{
+    padding-left: 20px;
+    width:300px;
+    height:40px;
+    border:none;
+    background-color: lightgray;
+}
+
+.btn_login{
+    width: 100px;
+    height: 40px;
+    border:none;
+    background-color: mediumslateblue;
+    color: white;
+}
+
+.login_item span a{
+    text-decoration: none;
+    color: rgb(1, 79, 110);
+    font-size: 13px;
+}
+
+.login_item form .sex{
+    width: 50px;
+    display: inline;
+    height:15px;
+}
